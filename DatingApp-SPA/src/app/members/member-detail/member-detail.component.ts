@@ -14,7 +14,7 @@ export class MemberDetailComponent implements OnInit {
     user: User;
     galleryOptions: NgxGalleryOptions[];
     galleryImages: NgxGalleryImage[];
-    
+
   constructor(private userService: UserService, private alertify: AlertifyService, private route: ActivatedRoute) {
 
    }
@@ -37,7 +37,7 @@ export class MemberDetailComponent implements OnInit {
 
     this.galleryImages = this.getImages();
   }
- 
+
   getImages() {
     const imageUrls = [];
     for (const photo of this.user.photos) {
